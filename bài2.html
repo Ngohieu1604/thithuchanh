@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function browseArr(arr){
+        for(let i=0 ; i<arr.length; i++){
+            console.log(arr[i])
+        }
+    }
+    function insertNumberToArray(arr, x, index) {
+        if (index < 0 || index > arr.length) {
+            return arr;
+        } else {
+            arr[index] = x;
+            return arr;
+        }
+    }
+    let arr1 = [1,2,3,4,5,6,7]
+    browseArr(arr1)
+    document.write(insertNumberToArray(arr1,5,7))
+
+</script>
